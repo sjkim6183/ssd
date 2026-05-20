@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #fff8f6;
+  --color-surface-dim: #ffd0bb;
+  --color-surface-bright: #fff8f6;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #fff1eb;
+  --color-surface-container: #ffeae1;
+  --color-surface-container-high: #ffe2d6;
+  --color-surface-container-highest: #ffdbcc;
+  --color-on-surface: #311304;
+  --color-on-surface-variant: #4f453a;
+  --color-inverse-surface: #4a2715;
+  --color-inverse-on-surface: #ffede6;
+  --color-outline: #817568;
+  --color-outline-variant: #d3c4b5;
+  --color-surface-tint: #7c5726;
+  --color-primary: #7c5726;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #dbab72;
+  --color-on-primary-container: #603f0f;
+  --color-inverse-primary: #efbe83;
+  --color-secondary: #7d5633;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #fcc79c;
+  --color-on-secondary-container: #78512f;
+  --color-tertiary: #5f5e59;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #b6b4ae;
+  --color-on-tertiary-container: #474641;
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+  --color-primary-fixed: #ffddb8;
+  --color-primary-fixed-dim: #efbe83;
+  --color-on-primary-fixed: #2a1700;
+  --color-on-primary-fixed-variant: #624010;
+  --color-secondary-fixed: #ffdcc2;
+  --color-secondary-fixed-dim: #f0bc92;
+  --color-on-secondary-fixed: #2e1500;
+  --color-on-secondary-fixed-variant: #623f1e;
+  --color-tertiary-fixed: #e5e2db;
+  --color-tertiary-fixed-dim: #c9c6c0;
+  --color-on-tertiary-fixed: #1c1c18;
+  --color-on-tertiary-fixed-variant: #474742;
+  --color-background: #fff8f6;
+  --color-on-background: #311304;
+  --color-surface-variant: #ffdbcc;
+
+  /* Custom brand colors from image/spec */
+  --color-honey-gold: #DBAB72;
+  --color-deep-mahogany: #5D3A1A;
+  --color-toasted-wheat: #E6D5B8;
+  --color-flour-cream: #F4F1EA;
+
+  --font-display: "Newsreader", serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+
+  --radius-sm: 0.25rem;
+  --radius-default: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+
+  --spacing-margin-mobile: 16px;
+  --spacing-gutter: 24px;
+  --spacing-margin-desktop: 64px;
+  --spacing-container-max: 1280px;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-background font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display text-deep-mahogany;
+  }
+}
+
+.bg-textured {
+  background-image: url('data:image/svg+xml,%3Csvg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="%23e6d5b8" fill-opacity="0.4" fill-rule="evenodd"%3E%3Ccircle cx="3" cy="3" r="3"/%3E%3Ccircle cx="13" cy="13" r="3"/%3E%3C/g%3E%3C/svg%3E');
+}
+
